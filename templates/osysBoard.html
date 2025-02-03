@@ -72,7 +72,7 @@
       methods: {
         async fetchData() {
           this.loading = true
-          response = await axios.get(`/api/property/get/SystemVar.osysBoard_version`)
+          response = await axios.get(`/api/property/SystemVar.osysBoard_version`)
           data = response.data.result
           if ('value' in data)
             this.installed = data.value
