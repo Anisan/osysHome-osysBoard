@@ -21,7 +21,7 @@
                 <a :href="update.html_url" target="_blank"><b>[[ update.name ]]</b></a>
                 <span><i class="fa-solid fa-circle-down mx-1"></i>[[update.assets[0].download_count]]</span>
             </div>
-            <p>[[ update.body ]]</p>
+            <p><pre>[[ update.body ]]</pre></p>
         </div>
 
         <a v-if="installed != update.name" class="btn btn-primary me-1" :href="'?upgrade='+update.name">Install</a>
