@@ -48,10 +48,6 @@ class osysBoard(BasePlugin):
 
         app.register_blueprint(self.client_bp)
 
-        from plugins.osysBoard.api import create_api_ns
-        api_ns = create_api_ns()
-        api.add_namespace(api_ns, path="/osysBoard")
-
     def initialization(self):
         pass
 
